@@ -1,0 +1,19 @@
+PRIVACY
+Last updated October 17, 2026
+
+What this website collects
+This website has no user accounts and runs no advertising trackers. Squarespace, which hosts the site, may set cookies needed to run it; see its cookie banner and policy.
+
+When you contact us
+If you use our contact form, email or call us, we use what you send only to reply to you and to discuss working together. We do not sell it. Contact form submissions are delivered to info@astrabeam.com and stored in our Squarespace account.
+
+Services this site relies on
+Loading these pages involves a few third-party services, which receive your IP address and standard browser information as part of serving files:
+- Squarespace hosts the website.
+- GitHub Pages serves the site's videos, images and interactive graphics.
+- Google Fonts serves the typefaces.
+- jsDelivr serves the 3D graphics library used in the flight replay.
+Their handling of that information is covered by their own privacy policies.
+
+Contact
+Questions about privacy: info@astrabeam.com, or Astrabeam, 520 White Plains Road, Suite 500, Tarrytown, NY 10591.

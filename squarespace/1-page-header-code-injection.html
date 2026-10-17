@@ -1,0 +1,46 @@
+<!-- Astrabeam homepage: Page Settings > Advanced > Page Header Code Injection -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter+Tight:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://tarunkumarnyu.github.io/astrabeam-site/styles.css?v=2d792ae5">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<style>
+  /* Hide Squarespace's own header and footer on this page: the page brings its own. */
+  #header, header.header, .header-announcement-bar-wrapper, #footer-sections, footer.sections { display: none !important; }
+  /* Let the code blocks run edge to edge. */
+  #page .page-section { padding: 0 !important; min-height: 0 !important; }
+  #page .page-section .content-wrapper { padding: 0 !important; max-width: none !important; }
+  #page .sqs-block-code, #page .sqs-block-code .sqs-block-content { padding: 0 !important; margin: 0 !important; }
+  #page .fluid-engine { row-gap: 0 !important; }
+  body { background: #0a0b0d !important; }
+  /* Contact code block holds only heading + details; the Form Block sits beside it. */
+  .contact-grid.contact-only { grid-template-columns: 1fr; }
+  .contact.section { padding-bottom: 40px; }
+  .site-wrapper, #siteWrapper { background: #0a0b0d; }
+
+  /* Native Squarespace Form Block, restyled to match the design (contact section). */
+  #page .sqs-block-form form { font-family: "Inter Tight", system-ui, sans-serif; }
+  #page .sqs-block-form .form-wrapper, #page .sqs-block-form .form-inner-wrapper { background: transparent !important; }
+  #page .sqs-block-form label, #page .sqs-block-form .title, #page .sqs-block-form legend {
+    color: #8a9099 !important; font-size: 14px !important; font-weight: 400 !important; letter-spacing: 0 !important; text-transform: none !important;
+  }
+  #page .sqs-block-form input[type=text], #page .sqs-block-form input[type=email], #page .sqs-block-form input[type=tel],
+  #page .sqs-block-form textarea, #page .sqs-block-form select {
+    background: #111317 !important; border: 1px solid #2c3138 !important; border-radius: 0 !important;
+    color: #ecedef !important; font: 16px "Inter Tight", sans-serif !important; padding: 12px 14px !important; box-shadow: none !important;
+  }
+  #page .sqs-block-form input:focus, #page .sqs-block-form textarea:focus, #page .sqs-block-form select:focus { border-color: #ff6600 !important; outline: none !important; }
+  #page .sqs-block-form select {
+    -webkit-appearance: none !important; appearance: none !important; height: 46px; padding-right: 44px !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%23ff6600' stroke-width='1.6'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important; background-position: right 16px center !important;
+  }
+  #page .sqs-block-form button[type=submit], #page .sqs-block-form .form-button-wrapper button {
+    background: #ff6600 !important; color: #0a0b0d !important; border: 0 !important; border-radius: 0 !important;
+    font: 500 16px "Inter Tight", sans-serif !important; padding: 14px 24px !important; text-transform: none !important; letter-spacing: 0 !important;
+  }
+  #page .sqs-block-form button[type=submit]:hover { background: #ff8533 !important; }
+  #page .sqs-block-form .form-submission-text { color: #ecedef !important; }
+</style>
+<script defer src="https://tarunkumarnyu.github.io/astrabeam-site/main.js?v=c72fe091"></script>
+<script type="module" src="https://tarunkumarnyu.github.io/astrabeam-site/flight.js?v=7da83110"></script>
