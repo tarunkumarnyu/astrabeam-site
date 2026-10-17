@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astrabeam | Perception for Physical AI</title>
+<meta name="description" content="Astrabeam builds perception for physical AI: sub-terahertz radar, AI sensor fusion and Open Loop Autonomy, so robots keep working in smoke, fog, dust and darkness.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter+Tight:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.astrabeam.com/">
+<meta name="theme-color" content="#07080a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Astrabeam">
+<meta property="og:title" content="Astrabeam: robots navigate where infrastructures fail">
+<meta property="og:description" content="Sub-THz radar, AI sensor fusion and Open Loop Autonomy for robots that keep working in smoke, fog, dust and darkness.">
+<meta property="og:image" content="https://tarunkumarnyu.github.io/astrabeam-site/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/astrabeam-mark-light.png">
+<link rel="stylesheet" href="styles.css?v=2d792ae5">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Astrabeam home">
+    <img class="logo-mark" src="assets/astrabeam-mark-light.png" alt="">
+    <img class="logo-word" src="assets/astrabeam-wordmark.png" alt="Astrabeam">
+  </a>
+  <nav id="site-nav">
+    <a href="#platform">Platform</a>
+    <a href="#flight">In the field</a>
+    <a href="#use-cases">Use cases</a>
+    <a href="#company">Company</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+</header>
+
+<section class="hero" id="top">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true">
+    <source src="assets/hero-720.mp4" type="video/mp4" media="(max-width: 900px)">
+    <source src="assets/hero-1080.mp4" type="video/mp4">
+  </video>
+  <div class="hero-shade"></div>
+  <div class="hero-copy">
+    <p class="kicker">Autonomy &amp; perception for physical AI</p>
+    <h1>Robots navigate<br>where infrastructures<br><em>fail</em></h1>
+    <p class="lede">We enable autonomous machines to keep working in unstructured, degraded and contested environments.</p>
+    <a class="btn" href="#flight">See it work</a>
+  </div>
+  <button class="video-toggle" type="button" aria-label="Pause background video">Pause</button>
+</section>
+
+<section class="section vision" id="vision">
+  <div class="wrap">
+    <p class="vision-lead reveal">Physical AI requires robust autonomy for robots to work in the real world, not just in ideal conditions.</p>
+    <div class="vision-cols">
+      <p class="reveal">Today's robots rely heavily on GPS, VIO and SLAM-based navigation, which fail in unstructured, cluttered, degraded or contested environments. We're building the next generation of autonomy and perception systems by combining AI-driven sensor fusion, edge processing and robotics control.</p>
+      <p class="reveal">Our platform integrates novel radar, computer vision, edge processing and motion control technologies to enable robust, all-environment autonomy and perception systems across robotics, industrial operations and defense.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section pov" id="pov">
+  <div class="wrap">
+    <div class="split-head">
+      <h2 class="reveal">Into the unstructured.<br>No GPS. No map.</h2>
+      <p class="reveal">A pitch-black basement, with no GPS and no prior map of the space. Lit only by its own light, our drone perceived every obstacle around it in real time.</p>
+    </div>
+    <figure class="band band-inline reveal">
+  <img src="assets/stills/basement-flight.jpg" alt="Our drone flying through a dark basement, lit only by its own light" loading="lazy" width="1920" height="1080">
+  <figcaption>Flight test in a dark basement, lit only by the drone's own light.</figcaption>
+</figure>
+  </div>
+</section>
+
+<section class="section platform" id="platform">
+  <div class="wrap">
+    <div class="split-head">
+      <h2 class="reveal">One perception stack for every environment.</h2>
+      <p class="reveal">A full-stack platform that combines advanced radio sensing, AI-driven perception and autonomy software, so systems operate reliably in complex, real-world environments where traditional sensors fail.</p>
+    </div>
+    <!-- LAYERS:START (generated by tools/platform_diagrams.py) -->
+<div class="layers">
+<article class="layer reveal">
+  <div class="diag"><svg class="diag-svg" viewBox="0 0 560 300" role="img" aria-label="Sub-terahertz radar beam sweeping through smoke and dust to detect a person" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <pattern id="hw-dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".9" fill="#2a3038"/></pattern>
+  <pattern id="hw-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3a4048" stroke-width="1"/></pattern>
+  <linearGradient id="hw-beam" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ff6600" stop-opacity=".45"/><stop offset="1" stop-color="#ff6600" stop-opacity="0"/></linearGradient>
+  <linearGradient id="hw-fog" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5f656c"/><stop offset="1" stop-color="#2b2f34"/></linearGradient>
+</defs>
+<rect x="40" y="105" width="90" height="90" fill="#0d0f12" stroke="#4a515b"/>
+<rect x="34" y="99" width="102" height="102" fill="none" stroke="#2a3038" stroke-dasharray="2 3"/>
+<rect x="51" y="116" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.00s" repeatCount="indefinite"/></rect>
+<rect x="51" y="135" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.12s" repeatCount="indefinite"/></rect>
+<rect x="51" y="154" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.24s" repeatCount="indefinite"/></rect>
+<rect x="51" y="173" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.36s" repeatCount="indefinite"/></rect>
+<text x="40" y="92" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4a515b" text-anchor="start" font-weight="400" letter-spacing=".08em">RF FRONT END</text>
+<rect x="70" y="116" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.12s" repeatCount="indefinite"/></rect>
+<rect x="70" y="135" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.24s" repeatCount="indefinite"/></rect>
+<rect x="70" y="154" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.36s" repeatCount="indefinite"/></rect>
+<rect x="70" y="173" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.48s" repeatCount="indefinite"/></rect>
+<text x="40" y="92" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4a515b" text-anchor="start" font-weight="400" letter-spacing=".08em">RF FRONT END</text>
+<rect x="89" y="116" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.24s" repeatCount="indefinite"/></rect>
+<rect x="89" y="135" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.36s" repeatCount="indefinite"/></rect>
+<rect x="89" y="154" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.48s" repeatCount="indefinite"/></rect>
+<rect x="89" y="173" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.60s" repeatCount="indefinite"/></rect>
+<text x="40" y="92" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4a515b" text-anchor="start" font-weight="400" letter-spacing=".08em">RF FRONT END</text>
+<rect x="108" y="116" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.36s" repeatCount="indefinite"/></rect>
+<rect x="108" y="135" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.48s" repeatCount="indefinite"/></rect>
+<rect x="108" y="154" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.60s" repeatCount="indefinite"/></rect>
+<rect x="108" y="173" width="11" height="11" fill="none" stroke="#ff6600" stroke-opacity=".85"><animate attributeName="stroke-opacity" values=".35;1;.35" dur="2.4s" begin="0.72s" repeatCount="indefinite"/></rect>
+<text x="40" y="92" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4a515b" text-anchor="start" font-weight="400" letter-spacing=".08em">RF FRONT END</text>
+<circle cx="267.7" cy="66.2" r="2.4" fill="#6b727b" fill-opacity="0.20"/>
+<circle cx="318.6" cy="117.8" r="1.1" fill="#6b727b" fill-opacity="0.34"/>
+<circle cx="199.0" cy="134.1" r="1.2" fill="#6b727b" fill-opacity="0.21"/>
+<circle cx="291.9" cy="228.4" r="1.3" fill="#6b727b" fill-opacity="0.25"/>
+<circle cx="340.6" cy="257.5" r="2.3" fill="#6b727b" fill-opacity="0.31"/>
+<circle cx="424.3" cy="41.2" r="2.9" fill="#6b727b" fill-opacity="0.27"/>
+<circle cx="224.6" cy="58.3" r="1.7" fill="#6b727b" fill-opacity="0.44"/>
+<circle cx="233.4" cy="169.6" r="2.4" fill="#6b727b" fill-opacity="0.30"/>
+<circle cx="321.5" cy="45.1" r="1.1" fill="#6b727b" fill-opacity="0.25"/>
+<circle cx="353.3" cy="132.6" r="1.7" fill="#6b727b" fill-opacity="0.37"/>
+<circle cx="298.8" cy="101.9" r="2.7" fill="#6b727b" fill-opacity="0.40"/>
+<circle cx="248.6" cy="167.9" r="2.2" fill="#6b727b" fill-opacity="0.46"/>
+<circle cx="365.1" cy="99.1" r="3.2" fill="#6b727b" fill-opacity="0.22"/>
+<circle cx="290.3" cy="211.7" r="1.3" fill="#6b727b" fill-opacity="0.34"/>
+<circle cx="199.4" cy="190.4" r="2.7" fill="#6b727b" fill-opacity="0.36"/>
+<circle cx="400.1" cy="105.3" r="2.5" fill="#6b727b" fill-opacity="0.37"/>
+<circle cx="329.2" cy="139.5" r="2.8" fill="#6b727b" fill-opacity="0.48"/>
+<circle cx="303.8" cy="189.4" r="1.1" fill="#6b727b" fill-opacity="0.40"/>
+<circle cx="345.3" cy="268.3" r="2.8" fill="#6b727b" fill-opacity="0.27"/>
+<circle cx="282.6" cy="190.5" r="1.0" fill="#6b727b" fill-opacity="0.33"/>
+<circle cx="230.3" cy="58.1" r="1.1" fill="#6b727b" fill-opacity="0.43"/>
+<circle cx="221.0" cy="89.4" r="1.9" fill="#6b727b" fill-opacity="0.46"/>
+<circle cx="209.3" cy="137.8" r="2.2" fill="#6b727b" fill-opacity="0.46"/>
+<circle cx="386.6" cy="237.4" r="1.6" fill="#6b727b" fill-opacity="0.31"/>
+<circle cx="276.1" cy="242.2" r="3.1" fill="#6b727b" fill-opacity="0.23"/>
+<circle cx="232.3" cy="85.7" r="1.5" fill="#6b727b" fill-opacity="0.34"/>
+<circle cx="331.4" cy="93.1" r="1.0" fill="#6b727b" fill-opacity="0.31"/>
+<circle cx="278.6" cy="165.9" r="3.1" fill="#6b727b" fill-opacity="0.40"/>
+<circle cx="313.7" cy="178.2" r="2.5" fill="#6b727b" fill-opacity="0.20"/>
+<circle cx="405.9" cy="217.2" r="2.9" fill="#6b727b" fill-opacity="0.44"/>
+<circle cx="284.2" cy="125.8" r="1.2" fill="#6b727b" fill-opacity="0.38"/>
+<circle cx="204.9" cy="46.2" r="1.5" fill="#6b727b" fill-opacity="0.23"/>
+<circle cx="271.6" cy="42.6" r="1.0" fill="#6b727b" fill-opacity="0.23"/>
+<circle cx="214.4" cy="117.3" r="1.1" fill="#6b727b" fill-opacity="0.46"/>
+<circle cx="337.4" cy="65.7" r="1.6" fill="#6b727b" fill-opacity="0.29"/>
+<circle cx="277.4" cy="59.5" r="2.9" fill="#6b727b" fill-opacity="0.50"/>
+<circle cx="301.8" cy="146.1" r="1.2" fill="#6b727b" fill-opacity="0.21"/>
+<circle cx="272.2" cy="93.5" r="2.8" fill="#6b727b" fill-opacity="0.23"/>
+<circle cx="195.5" cy="258.2" r="2.2" fill="#6b727b" fill-opacity="0.23"/>
+<circle cx="320.4" cy="36.5" r="2.2" fill="#6b727b" fill-opacity="0.49"/>
+<circle cx="397.2" cy="197.1" r="1.6" fill="#6b727b" fill-opacity="0.30"/>
+<circle cx="230.1" cy="215.3" r="2.2" fill="#6b727b" fill-opacity="0.43"/>
+<circle cx="269.1" cy="83.5" r="2.8" fill="#6b727b" fill-opacity="0.50"/>
+<circle cx="394.6" cy="223.5" r="2.8" fill="#6b727b" fill-opacity="0.42"/>
+<circle cx="244.4" cy="154.2" r="1.8" fill="#6b727b" fill-opacity="0.19"/>
+<circle cx="196.7" cy="97.1" r="1.6" fill="#6b727b" fill-opacity="0.40"/>
+<circle cx="419.6" cy="137.3" r="3.1" fill="#6b727b" fill-opacity="0.50"/>
+<circle cx="419.2" cy="117.5" r="1.5" fill="#6b727b" fill-opacity="0.25"/>
+<circle cx="237.2" cy="79.0" r="2.4" fill="#6b727b" fill-opacity="0.47"/>
+<circle cx="391.7" cy="145.1" r="2.4" fill="#6b727b" fill-opacity="0.44"/>
+<circle cx="210.3" cy="188.5" r="3.0" fill="#6b727b" fill-opacity="0.43"/>
+<circle cx="370.0" cy="144.7" r="1.4" fill="#6b727b" fill-opacity="0.43"/>
+<circle cx="269.8" cy="222.2" r="3.1" fill="#6b727b" fill-opacity="0.31"/>
+<circle cx="286.3" cy="257.2" r="2.6" fill="#6b727b" fill-opacity="0.23"/>
+<circle cx="220.5" cy="66.3" r="3.0" fill="#6b727b" fill-opacity="0.44"/>
+<circle cx="225.1" cy="228.4" r="3.2" fill="#6b727b" fill-opacity="0.39"/>
+<circle cx="274.1" cy="161.7" r="1.3" fill="#6b727b" fill-opacity="0.18"/>
+<circle cx="423.0" cy="185.9" r="2.2" fill="#6b727b" fill-opacity="0.48"/>
+<circle cx="294.1" cy="239.2" r="2.8" fill="#6b727b" fill-opacity="0.25"/>
+<circle cx="250.4" cy="100.3" r="1.5" fill="#6b727b" fill-opacity="0.37"/>
+<circle cx="252.2" cy="130.6" r="1.3" fill="#6b727b" fill-opacity="0.47"/>
+<circle cx="274.9" cy="140.0" r="2.3" fill="#6b727b" fill-opacity="0.47"/>
+<circle cx="291.0" cy="250.3" r="2.1" fill="#6b727b" fill-opacity="0.35"/>
+<circle cx="315.6" cy="34.5" r="2.0" fill="#6b727b" fill-opacity="0.24"/>
+<circle cx="190.9" cy="221.8" r="1.4" fill="#6b727b" fill-opacity="0.33"/>
+<circle cx="364.0" cy="163.6" r="1.7" fill="#6b727b" fill-opacity="0.35"/>
+<circle cx="323.3" cy="218.2" r="1.2" fill="#6b727b" fill-opacity="0.36"/>
+<circle cx="249.6" cy="96.5" r="2.7" fill="#6b727b" fill-opacity="0.34"/>
+<circle cx="324.8" cy="212.4" r="3.0" fill="#6b727b" fill-opacity="0.32"/>
+<circle cx="337.0" cy="151.3" r="2.1" fill="#6b727b" fill-opacity="0.40"/>
+<text x="200" y="286" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">SMOKE · FOG · DUST</text>
+<g><path d="M132 150 L540 70 L540 230 Z" fill="url(#hw-beam)"/><line x1="132" y1="150" x2="448" y2="150" stroke="#ff6600" stroke-opacity=".5" stroke-dasharray="3 5"/><animateTransform attributeName="transform" type="rotate" values="-11 132 150;11 132 150;-11 132 150" dur="6s" repeatCount="indefinite"/></g>
+<g fill="none" stroke="#eceef1" stroke-opacity=".75" stroke-width="1.4"><circle cx="478" cy="118" r="9"/><path d="M466 176 V140 Q466 130 478 130 Q490 130 490 140 V176 M470 176 V210 M486 176 V210"/></g>
+<circle cx="469" cy="112" r="2" fill="#ff6600"><animate attributeName="opacity" values="0;1;0" dur="6s" begin="0.00s" repeatCount="indefinite"/></circle>
+<circle cx="469" cy="124" r="2" fill="#ff6600"><animate attributeName="opacity" values="0;1;0" dur="6s" begin="0.30s" repeatCount="indefinite"/></circle>
+<circle cx="466" cy="138" r="2" fill="#ff6600"><animate attributeName="opacity" values="0;1;0" dur="6s" begin="0.65s" repeatCount="indefinite"/></circle>
+<circle cx="466" cy="150" r="2" fill="#ff6600"><animate attributeName="opacity" values="0;1;0" dur="6s" begin="0.95s" repeatCount="indefinite"/></circle>
+<circle cx="466" cy="162" r="2" fill="#ff6600"><animate attributeName="opacity" values="0;1;0" dur="6s" begin="1.25s" repeatCount="indefinite"/></circle>
+<circle cx="466" cy="176" r="2" fill="#ff6600"><animate attributeName="opacity" values="0;1;0" dur="6s" begin="1.60s" repeatCount="indefinite"/></circle>
+<circle cx="466" cy="190" r="2" fill="#ff6600"><animate attributeName="opacity" values="0;1;0" dur="6s" begin="1.95s" repeatCount="indefinite"/></circle>
+<circle cx="466" cy="204" r="2" fill="#ff6600"><animate attributeName="opacity" values="0;1;0" dur="6s" begin="2.30s" repeatCount="indefinite"/></circle>
+<path d="M452 110V100H462 M494 100H504V110 M504 208V218H494 M462 218H452V208" fill="none" stroke="#ff6600" stroke-width="1.5"/>
+<text x="452" y="92" font-family="IBM Plex Mono, monospace" font-size="9" fill="#ff6600" text-anchor="start" font-weight="400" letter-spacing=".08em">TARGET</text>
+<circle cx="478" cy="160" r="10" fill="none" stroke="#ff6600"><animate attributeName="r" values="10;46" dur="3s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".6;0" dur="3s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle cx="478" cy="160" r="10" fill="none" stroke="#ff6600"><animate attributeName="r" values="10;46" dur="3s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".6;0" dur="3s" begin="1.5s" repeatCount="indefinite"/></circle>
+</svg></div>
+  <div class="layer-body"><span class="layer-label">Hardware</span><h3>Sub-terahertz radar</h3><p>High-resolution sub-THz radar that operates in smoke, fog, dust and darkness, where cameras and LiDAR fail.</p><p>It delivers high range and spatial resolution in a compact, low-SWaP-C package built for industrial, robotics and defense environments.</p></div>
+</article>
+<article class="layer reveal">
+  <div class="diag"><svg class="diag-svg" viewBox="0 0 560 300" role="img" aria-label="Robot navigating around obstacles to a goal with GPS denied, communication lost and no prior map, using onboard perception" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <pattern id="sw-dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".9" fill="#2a3038"/></pattern>
+  <pattern id="sw-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3a4048" stroke-width="1"/></pattern>
+  <linearGradient id="sw-beam" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ff6600" stop-opacity=".45"/><stop offset="1" stop-color="#ff6600" stop-opacity="0"/></linearGradient>
+  <linearGradient id="sw-fog" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5f656c"/><stop offset="1" stop-color="#2b2f34"/></linearGradient>
+</defs>
+<rect x="150" y="195" width="70" height="70" fill="url(#sw-hatch)" stroke="#3a4048"/>
+<rect x="235" y="60" width="80" height="70" fill="url(#sw-hatch)" stroke="#3a4048"/>
+<rect x="318" y="196" width="52" height="58" fill="url(#sw-hatch)" stroke="#3a4048"/>
+<rect x="380" y="25" width="40" height="40" fill="url(#sw-hatch)" stroke="#3a4048"/>
+<rect x="40" y="70" width="70" height="60" fill="url(#sw-hatch)" stroke="#3a4048"/>
+<path d="M60 250 C 120 250, 140 170, 200 165 S 290 220, 330 160 S 380 70, 450 80 S 505 70, 512 62" fill="none" stroke="#ff6600" stroke-opacity=".12" stroke-width="6" stroke-linecap="round"/>
+<path d="M60 250 C 120 250, 140 170, 200 165 S 290 220, 330 160 S 380 70, 450 80 S 505 70, 512 62" fill="none" stroke="#ff6600" stroke-width="1.6" stroke-dasharray="5 6"><animate attributeName="stroke-dashoffset" values="0;-22" dur="1s" repeatCount="indefinite"/></path>
+<circle cx="60" cy="250" r="5" fill="none" stroke="#eceef1"/><text x="48" y="278" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">START</text>
+<rect x="504" y="54" width="16" height="16" fill="none" stroke="#3dffa8"/><path d="M512 46V78M496 62H528" stroke="#3dffa8" stroke-opacity=".6"/><text x="484" y="98" font-family="IBM Plex Mono, monospace" font-size="9" fill="#3dffa8" text-anchor="start" font-weight="400" letter-spacing=".08em">GOAL</text>
+<g><path d="M0 0 L42 -18 L42 18 Z" fill="#ff6600" fill-opacity=".14"/><g stroke="#eceef1" stroke-width="1.6"><line x1="-7" y1="-7" x2="7" y2="7"/><line x1="-7" y1="7" x2="7" y2="-7"/></g><circle r="2.4" fill="#ff6600"/><animateMotion dur="9s" repeatCount="indefinite" rotate="auto" path="M60 250 C 120 250, 140 170, 200 165 S 290 220, 330 160 S 380 70, 450 80 S 505 70, 512 62"/></g>
+<rect x="392" y="196" width="152" height="88" fill="#0d0f12" stroke="#4a515b"/>
+<text x="404" y="216" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">GNSS</text><text x="532" y="216" font-family="IBM Plex Mono, monospace" font-size="9" fill="#ff4d4d" text-anchor="end" font-weight="500" letter-spacing=".08em">DENIED</text>
+<text x="404" y="235" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">LINK</text><text x="532" y="235" font-family="IBM Plex Mono, monospace" font-size="9" fill="#ff4d4d" text-anchor="end" font-weight="500" letter-spacing=".08em">LOST</text>
+<text x="404" y="254" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">PRIOR MAP</text><text x="532" y="254" font-family="IBM Plex Mono, monospace" font-size="9" fill="#ff4d4d" text-anchor="end" font-weight="500" letter-spacing=".08em">NONE</text>
+<text x="404" y="273" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">NAV</text><text x="532" y="273" font-family="IBM Plex Mono, monospace" font-size="9" fill="#3dffa8" text-anchor="end" font-weight="500" letter-spacing=".08em">ONBOARD</text>
+</svg></div>
+  <div class="layer-body"><span class="layer-label">Software</span><h3>Open Loop Autonomy</h3><p>Our autonomy framework navigates, tracks and completes missions using onboard sensing and compute alone: no GPS, no pre-built maps, no continuous communication.</p><p>Because it is observation-centric, it keeps working in GPS-denied and contested environments and holds the mission through communication loss. It reduces the need for constant human control while still supporting supervision, and deploys as a software upgrade to existing systems.</p></div>
+</article>
+<article class="layer reveal">
+  <div class="diag"><svg class="diag-svg" viewBox="0 0 560 300" role="img" aria-label="Radar and camera inputs fused by a neural network into detections and a navigation path" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <pattern id="ml-dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".9" fill="#2a3038"/></pattern>
+  <pattern id="ml-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3a4048" stroke-width="1"/></pattern>
+  <linearGradient id="ml-beam" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ff6600" stop-opacity=".45"/><stop offset="1" stop-color="#ff6600" stop-opacity="0"/></linearGradient>
+  <linearGradient id="ml-fog" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5f656c"/><stop offset="1" stop-color="#2b2f34"/></linearGradient>
+</defs>
+<rect x="24" y="42" width="128" height="88" fill="#0d0f12" stroke="#4a515b"/><text x="24" y="34" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">RADAR</text>
+<circle cx="59.7" cy="98.3" r="1.3" fill="#ff6600" fill-opacity="0.62"/>
+<circle cx="99.2" cy="102.5" r="1.3" fill="#ff6600" fill-opacity="0.44"/>
+<circle cx="35.4" cy="113.5" r="1.3" fill="#ff6600" fill-opacity="0.56"/>
+<circle cx="59.3" cy="121.8" r="1.3" fill="#ff6600" fill-opacity="0.68"/>
+<circle cx="124.3" cy="94.8" r="1.3" fill="#ff6600" fill-opacity="0.78"/>
+<circle cx="50.3" cy="103.0" r="1.3" fill="#ff6600" fill-opacity="0.92"/>
+<circle cx="90.5" cy="108.5" r="1.3" fill="#ff6600" fill-opacity="0.80"/>
+<circle cx="40.9" cy="109.4" r="1.3" fill="#ff6600" fill-opacity="0.75"/>
+<circle cx="66.5" cy="71.6" r="1.3" fill="#ff6600" fill-opacity="0.92"/>
+<circle cx="85.1" cy="107.4" r="1.3" fill="#ff6600" fill-opacity="0.93"/>
+<circle cx="111.1" cy="117.9" r="1.3" fill="#ff6600" fill-opacity="0.64"/>
+<circle cx="120.5" cy="93.1" r="1.3" fill="#ff6600" fill-opacity="0.96"/>
+<circle cx="128.9" cy="75.1" r="1.3" fill="#ff6600" fill-opacity="0.48"/>
+<circle cx="57.4" cy="120.2" r="1.3" fill="#ff6600" fill-opacity="0.66"/>
+<circle cx="101.7" cy="85.7" r="1.3" fill="#ff6600" fill-opacity="0.70"/>
+<circle cx="75.7" cy="88.2" r="1.3" fill="#ff6600" fill-opacity="0.75"/>
+<circle cx="97.1" cy="117.0" r="1.3" fill="#ff6600" fill-opacity="0.81"/>
+<circle cx="134.3" cy="114.5" r="1.3" fill="#ff6600" fill-opacity="0.99"/>
+<circle cx="106.5" cy="78.5" r="1.3" fill="#ff6600" fill-opacity="0.92"/>
+<circle cx="138.2" cy="117.0" r="1.3" fill="#ff6600" fill-opacity="0.74"/>
+<circle cx="111.1" cy="81.0" r="1.3" fill="#ff6600" fill-opacity="0.90"/>
+<circle cx="95.9" cy="84.8" r="1.3" fill="#ff6600" fill-opacity="0.44"/>
+<circle cx="126.2" cy="121.5" r="1.3" fill="#ff6600" fill-opacity="0.45"/>
+<circle cx="120.5" cy="91.3" r="1.3" fill="#ff6600" fill-opacity="0.49"/>
+<circle cx="65.7" cy="110.0" r="1.3" fill="#ff6600" fill-opacity="0.92"/>
+<circle cx="38.8" cy="102.0" r="1.3" fill="#ff6600" fill-opacity="0.43"/>
+<circle cx="111.6" cy="87.2" r="1.3" fill="#ff6600" fill-opacity="0.93"/>
+<circle cx="139.9" cy="96.3" r="1.3" fill="#ff6600" fill-opacity="1.00"/>
+<circle cx="67.4" cy="74.0" r="1.3" fill="#ff6600" fill-opacity="0.76"/>
+<circle cx="37.4" cy="80.3" r="1.3" fill="#ff6600" fill-opacity="0.64"/>
+<circle cx="99.9" cy="78.1" r="1.3" fill="#ff6600" fill-opacity="0.43"/>
+<circle cx="127.7" cy="86.3" r="1.3" fill="#ff6600" fill-opacity="0.98"/>
+<circle cx="130.8" cy="89.6" r="1.3" fill="#ff6600" fill-opacity="0.68"/>
+<circle cx="90.2" cy="103.5" r="1.3" fill="#ff6600" fill-opacity="0.76"/>
+<circle cx="94.4" cy="102.2" r="1.3" fill="#ff6600" fill-opacity="0.96"/>
+<circle cx="88.8" cy="92.4" r="1.3" fill="#ff6600" fill-opacity="0.83"/>
+<circle cx="59.7" cy="85.7" r="1.3" fill="#ff6600" fill-opacity="0.99"/>
+<circle cx="90.3" cy="98.5" r="1.3" fill="#ff6600" fill-opacity="0.41"/>
+<circle cx="78.8" cy="100.2" r="1.3" fill="#ff6600" fill-opacity="0.41"/>
+<circle cx="100.5" cy="102.9" r="1.3" fill="#ff6600" fill-opacity="0.44"/>
+<circle cx="101.8" cy="94.2" r="1.3" fill="#ff6600" fill-opacity="0.81"/>
+<circle cx="72.1" cy="106.8" r="1.3" fill="#ff6600" fill-opacity="0.84"/>
+<circle cx="36.4" cy="73.1" r="1.3" fill="#ff6600" fill-opacity="0.81"/>
+<circle cx="138.0" cy="83.1" r="1.3" fill="#ff6600" fill-opacity="0.67"/>
+<circle cx="98.0" cy="86.6" r="1.3" fill="#ff6600" fill-opacity="0.62"/>
+<circle cx="67.8" cy="89.2" r="1.3" fill="#ff6600" fill-opacity="0.76"/>
+<path d="M40 120 Q 88 58 136 120" fill="none" stroke="#ff6600" stroke-opacity=".35"/>
+<rect x="24" y="170" width="128" height="88" fill="url(#ml-fog)" stroke="#4a515b"/><text x="24" y="162" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">CAMERA</text>
+<path d="M40 240 L70 205 L92 228 L112 212 L136 240 Z" fill="#1d2025" fill-opacity=".5"/>
+<text x="88" y="252" font-family="IBM Plex Mono, monospace" font-size="8" fill="#c9cdd2" text-anchor="middle" font-weight="400" letter-spacing=".08em">LOW VISIBILITY</text>
+<line x1="220" y1="70" x2="285" y2="90" stroke="#2a3038"/>
+<line x1="220" y1="70" x2="285" y2="130" stroke="#2a3038"/>
+<line x1="220" y1="70" x2="285" y2="170" stroke="#2a3038"/>
+<line x1="220" y1="70" x2="285" y2="210" stroke="#2a3038"/>
+<line x1="220" y1="110" x2="285" y2="90" stroke="#2a3038"/>
+<line x1="220" y1="110" x2="285" y2="130" stroke="#2a3038"/>
+<line x1="220" y1="110" x2="285" y2="170" stroke="#2a3038"/>
+<line x1="220" y1="110" x2="285" y2="210" stroke="#2a3038"/>
+<line x1="220" y1="150" x2="285" y2="90" stroke="#2a3038"/>
+<line x1="220" y1="150" x2="285" y2="130" stroke="#2a3038"/>
+<line x1="220" y1="150" x2="285" y2="170" stroke="#2a3038"/>
+<line x1="220" y1="150" x2="285" y2="210" stroke="#2a3038"/>
+<line x1="220" y1="190" x2="285" y2="90" stroke="#2a3038"/>
+<line x1="220" y1="190" x2="285" y2="130" stroke="#2a3038"/>
+<line x1="220" y1="190" x2="285" y2="170" stroke="#2a3038"/>
+<line x1="220" y1="190" x2="285" y2="210" stroke="#2a3038"/>
+<line x1="220" y1="230" x2="285" y2="90" stroke="#2a3038"/>
+<line x1="220" y1="230" x2="285" y2="130" stroke="#2a3038"/>
+<line x1="220" y1="230" x2="285" y2="170" stroke="#2a3038"/>
+<line x1="220" y1="230" x2="285" y2="210" stroke="#2a3038"/>
+<line x1="285" y1="90" x2="350" y2="110" stroke="#2a3038"/>
+<line x1="285" y1="90" x2="350" y2="150" stroke="#2a3038"/>
+<line x1="285" y1="90" x2="350" y2="190" stroke="#2a3038"/>
+<line x1="285" y1="130" x2="350" y2="110" stroke="#2a3038"/>
+<line x1="285" y1="130" x2="350" y2="150" stroke="#2a3038"/>
+<line x1="285" y1="130" x2="350" y2="190" stroke="#2a3038"/>
+<line x1="285" y1="170" x2="350" y2="110" stroke="#2a3038"/>
+<line x1="285" y1="170" x2="350" y2="150" stroke="#2a3038"/>
+<line x1="285" y1="170" x2="350" y2="190" stroke="#2a3038"/>
+<line x1="285" y1="210" x2="350" y2="110" stroke="#2a3038"/>
+<line x1="285" y1="210" x2="350" y2="150" stroke="#2a3038"/>
+<line x1="285" y1="210" x2="350" y2="190" stroke="#2a3038"/>
+<line x1="152" y1="86" x2="220" y2="70" stroke="#2a3038"/>
+<line x1="152" y1="214" x2="220" y2="70" stroke="#2a3038"/>
+<line x1="152" y1="86" x2="220" y2="110" stroke="#2a3038"/>
+<line x1="152" y1="214" x2="220" y2="110" stroke="#2a3038"/>
+<line x1="152" y1="86" x2="220" y2="150" stroke="#2a3038"/>
+<line x1="152" y1="214" x2="220" y2="150" stroke="#2a3038"/>
+<line x1="152" y1="86" x2="220" y2="190" stroke="#2a3038"/>
+<line x1="152" y1="214" x2="220" y2="190" stroke="#2a3038"/>
+<line x1="152" y1="86" x2="220" y2="230" stroke="#2a3038"/>
+<line x1="152" y1="214" x2="220" y2="230" stroke="#2a3038"/>
+<line x1="350" y1="110" x2="396" y2="150" stroke="#2a3038"/>
+<line x1="350" y1="150" x2="396" y2="150" stroke="#2a3038"/>
+<line x1="350" y1="190" x2="396" y2="150" stroke="#2a3038"/>
+<circle cx="220" cy="70" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="220" cy="110" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="220" cy="150" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="220" cy="190" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="220" cy="230" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="285" cy="90" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="285" cy="130" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="285" cy="170" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="285" cy="210" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="350" cy="110" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="350" cy="150" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<circle cx="350" cy="190" r="5" fill="#0d0f12" stroke="#4a515b"/>
+<text x="285" y="268" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="middle" font-weight="400" letter-spacing=".08em">MULTI-MODAL FUSION</text>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="1.8s" begin="0.00s" repeatCount="indefinite" path="M152 86L220 110"/></circle>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="1.8s" begin="0.45s" repeatCount="indefinite" path="M220 110L285 130"/></circle>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="1.8s" begin="0.90s" repeatCount="indefinite" path="M285 130L350 150"/></circle>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="1.8s" begin="1.35s" repeatCount="indefinite" path="M350 150L396 150"/></circle>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="1.8s" begin="0.00s" repeatCount="indefinite" path="M152 214L220 190"/></circle>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="1.8s" begin="0.45s" repeatCount="indefinite" path="M220 190L285 170"/></circle>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="1.8s" begin="0.90s" repeatCount="indefinite" path="M285 170L350 150"/></circle>
+<rect x="396" y="48" width="144" height="204" fill="#0d0f12" stroke="#4a515b"/><text x="396" y="40" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">SCENE UNDERSTANDING</text>
+<path d="M408 236 L440 214 L470 220 L500 196 L528 180" fill="none" stroke="#3dffa8" stroke-dasharray="2 4"/>
+<circle cx="408" cy="236" r="2" fill="#3dffa8"/>
+<circle cx="440" cy="214" r="2" fill="#3dffa8"/>
+<circle cx="470" cy="220" r="2" fill="#3dffa8"/>
+<circle cx="500" cy="196" r="2" fill="#3dffa8"/>
+<circle cx="528" cy="180" r="2" fill="#3dffa8"/>
+<text x="408" y="248" font-family="IBM Plex Mono, monospace" font-size="8" fill="#3dffa8" text-anchor="start" font-weight="400" letter-spacing=".08em">NAVIGATION PATH</text>
+<path d="M410 88V78H420 M444 78H454V88 M454 142V152H444 M420 152H410V142" fill="none" stroke="#ff6600" stroke-width="1.5"/><text x="410" y="72" font-family="IBM Plex Mono, monospace" font-size="8" fill="#ff6600" text-anchor="start" font-weight="400" letter-spacing=".08em">PERSON</text>
+<path d="M466 122V112H476 M518 112H528V122 M528 148V158H518 M476 158H466V148" fill="none" stroke="#ff6600" stroke-width="1.5"/><text x="466" y="106" font-family="IBM Plex Mono, monospace" font-size="8" fill="#ff6600" text-anchor="start" font-weight="400" letter-spacing=".08em">VEHICLE</text>
+</svg></div>
+  <div class="layer-body"><span class="layer-label">Machine learning</span><h3>Sensor fusion and perception</h3><p>Machine learning turns raw radar and camera data into a real-time understanding of the environment, more robust than any single sensor alone.</p><p>Edge-optimized models run object detection and tracking with low latency, and keep perception accurate when visibility drops.</p></div>
+</article>
+<article class="layer reveal">
+  <div class="diag"><svg class="diag-svg" viewBox="0 0 560 300" role="img" aria-label="Edge compute module running Open Loop Autonomy, deployed to a drone, a ground robot and an AMR, scaling from pilot to fleet" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <pattern id="dp-dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".9" fill="#2a3038"/></pattern>
+  <pattern id="dp-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#3a4048" stroke-width="1"/></pattern>
+  <linearGradient id="dp-beam" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ff6600" stop-opacity=".45"/><stop offset="1" stop-color="#ff6600" stop-opacity="0"/></linearGradient>
+  <linearGradient id="dp-fog" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5f656c"/><stop offset="1" stop-color="#2b2f34"/></linearGradient>
+</defs>
+<rect x="210" y="92" width="140" height="116" fill="#0d0f12" stroke="#4a515b"/>
+<line x1="224" y1="104" x2="224" y2="126" stroke="#4a515b"/>
+<line x1="236" y1="104" x2="236" y2="126" stroke="#4a515b"/>
+<line x1="248" y1="104" x2="248" y2="126" stroke="#4a515b"/>
+<line x1="260" y1="104" x2="260" y2="126" stroke="#4a515b"/>
+<line x1="272" y1="104" x2="272" y2="126" stroke="#4a515b"/>
+<line x1="284" y1="104" x2="284" y2="126" stroke="#4a515b"/>
+<line x1="296" y1="104" x2="296" y2="126" stroke="#4a515b"/>
+<line x1="308" y1="104" x2="308" y2="126" stroke="#4a515b"/>
+<line x1="320" y1="104" x2="320" y2="126" stroke="#4a515b"/>
+<rect x="254" y="138" width="52" height="40" fill="none" stroke="#ff6600"/><rect x="266" y="148" width="28" height="20" fill="#ff6600" fill-opacity=".18"/>
+<rect x="220" y="192" width="12" height="8" fill="none" stroke="#4a515b"/>
+<rect x="241" y="192" width="12" height="8" fill="none" stroke="#4a515b"/>
+<rect x="262" y="192" width="12" height="8" fill="none" stroke="#4a515b"/>
+<rect x="283" y="192" width="12" height="8" fill="none" stroke="#4a515b"/>
+<rect x="304" y="192" width="12" height="8" fill="none" stroke="#4a515b"/>
+<rect x="325" y="192" width="12" height="8" fill="none" stroke="#4a515b"/>
+<text x="280" y="228" font-family="IBM Plex Mono, monospace" font-size="9" fill="#eceef1" text-anchor="middle" font-weight="500" letter-spacing=".08em">EDGE COMPUTE</text>
+<text x="280" y="242" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="middle" font-weight="400" letter-spacing=".08em">JETSON-CLASS</text>
+<text x="280" y="80" font-family="IBM Plex Mono, monospace" font-size="9" fill="#ff6600" text-anchor="middle" font-weight="400" letter-spacing=".08em">OPEN LOOP AUTONOMY</text>
+<g stroke="#c9cdd2" stroke-width="1.4" fill="none"><line x1="52" y1="48" x2="88" y2="76"/><line x1="52" y1="76" x2="88" y2="48"/><circle cx="52" cy="48" r="8"/><circle cx="88" cy="48" r="8"/><circle cx="52" cy="76" r="8"/><circle cx="88" cy="76" r="8"/><rect x="44" y="222" width="52" height="22"/><circle cx="54" cy="250" r="7"/><circle cx="86" cy="250" r="7"/><path d="M58 222 V212 H74"/><rect x="468" y="132" width="40" height="34"/><circle cx="476" cy="170" r="4"/><circle cx="500" cy="170" r="4"/><path d="M508 140 H522 V124"/></g>
+<text x="70" y="102" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="middle" font-weight="400" letter-spacing=".08em">UAV</text>
+<text x="70" y="268" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="middle" font-weight="400" letter-spacing=".08em">GROUND ROBOT</text>
+<text x="488" y="192" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="middle" font-weight="400" letter-spacing=".08em">AMR</text>
+<path d="M210 122 C 160 122, 130 64, 100 64" fill="none" stroke="#4a515b" stroke-dasharray="3 4"/>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="2.4s" begin="0.0s" repeatCount="indefinite" path="M210 122 C 160 122, 130 64, 100 64"/></circle>
+<path d="M210 182 C 160 182, 130 236, 100 236" fill="none" stroke="#4a515b" stroke-dasharray="3 4"/>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="2.4s" begin="0.6s" repeatCount="indefinite" path="M210 182 C 160 182, 130 236, 100 236"/></circle>
+<path d="M350 150 C 420 150, 430 150, 464 150" fill="none" stroke="#4a515b" stroke-dasharray="3 4"/>
+<circle r="2.6" fill="#ff6600"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M350 150 C 420 150, 430 150, 464 150"/></circle>
+<text x="250" y="24" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">INTEGRATES WITH EXISTING STACKS</text>
+<rect x="392" y="246" width="8" height="8" fill="none" fill-opacity=".8" stroke="#ff6600"/>
+<rect x="434" y="246" width="8" height="8" fill="none" fill-opacity=".8" stroke="#ff6600"/>
+<rect x="446" y="246" width="8" height="8" fill="none" fill-opacity=".8" stroke="#ff6600"/>
+<rect x="458" y="246" width="8" height="8" fill="none" fill-opacity=".8" stroke="#ff6600"/>
+<rect x="500" y="246" width="8" height="8" fill="#ff6600" fill-opacity=".8" stroke="#ff6600"/>
+<rect x="512" y="246" width="8" height="8" fill="#ff6600" fill-opacity=".8" stroke="#ff6600"/>
+<rect x="524" y="246" width="8" height="8" fill="#ff6600" fill-opacity=".8" stroke="#ff6600"/>
+<rect x="500" y="258" width="8" height="8" fill="#ff6600" fill-opacity=".8" stroke="#ff6600"/>
+<rect x="512" y="258" width="8" height="8" fill="#ff6600" fill-opacity=".8" stroke="#ff6600"/>
+<rect x="524" y="258" width="8" height="8" fill="#ff6600" fill-opacity=".8" stroke="#ff6600"/>
+<path d="M408 250 H426 M474 250 H492" stroke="#7c838d"/>
+<text x="392" y="232" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7c838d" text-anchor="start" font-weight="400" letter-spacing=".08em">PILOT</text><text x="532" y="232" font-family="IBM Plex Mono, monospace" font-size="9" fill="#eceef1" text-anchor="end" font-weight="400" letter-spacing=".08em">FLEET</text>
+</svg></div>
+  <div class="layer-body"><span class="layer-label">Deployment</span><h3>Built to integrate</h3><p>The platform runs in real time on edge devices such as NVIDIA Jetson and integrates with existing robotics and autonomy stacks.</p><p>Deploy it as a module or a full system, add capability through software upgrades to Open Loop Autonomy, and scale from a pilot to a fleet-wide rollout.</p></div>
+</article>
+</div>
+<!-- LAYERS:END -->
+  </div>
+</section>
+
+<!-- FLIGHT REPLAY: real recorded flight -->
+<section class="section flight" id="flight">
+  <div class="wrap">
+    <p class="kicker">In the field</p>
+    <div class="fl-head">
+      <h2 class="reveal">From perception to safe flight.</h2>
+      <p class="body reveal">A real flight, replayed from the drone's own log. It spots the obstacles around it, marks a safety zone around each one, and keeps planning a clear path through.</p>
+    </div>
+
+    <div class="fl-grid reveal">
+      <div class="fl-panel fl-cam">
+        <span class="fl-tag mono">01 ONBOARD CAMERA</span>
+        <video id="fl-video" muted playsinline preload="auto" poster="assets/flight/replay-poster.jpg">
+          <source src="assets/flight/replay.mp4" type="video/mp4">
+        </video>
+        <span class="fl-tag fl-tag-depth mono">DEPTH</span>
+        <span class="fl-tag fl-tag-depth2 mono">ENHANCED DEPTH</span>
+      </div>
+      <div class="fl-panel fl-3d">
+        <span class="fl-tag mono">02 LOCAL AWARENESS · 3D</span>
+        <canvas id="fl-canvas" aria-label="3D view of obstacles, safety spheres and planned path around the drone"></canvas>
+        <div class="fl-legend mono">
+          <span><i class="lg-red"></i>SAFETY ZONE</span>
+          <span><i class="lg-blue"></i>PLANNED PATH</span>
+        </div>
+        <span class="fl-hint mono">DRAG TO ORBIT</span>
+      </div>
+    </div>
+
+    <div class="fl-bar reveal">
+      <button class="fl-play mono" id="fl-play" type="button" aria-label="Play replay">▶</button>
+      <div class="fl-track">
+        <canvas id="fl-band" aria-hidden="true"></canvas>
+        <input type="range" id="fl-scrub" min="0" max="229" value="0" step="1" aria-label="Replay position">
+      </div>
+      <span class="mono fl-time" id="fl-time">00.0 / 23.0 s</span>
+    </div>
+    <div class="fl-key mono reveal"><span><i class="k-obs"></i>OBSTACLES IN VIEW</span></div>
+
+    <div class="fl-stats reveal">
+      <div><span class="mono">GROUND SPEED</span><b id="st-speed">–</b><em class="mono">M/S</em></div>
+      <div><span class="mono">RELATIVE HEIGHT</span><b id="st-alt">–</b><em class="mono">M</em></div>
+      <div><span class="mono">NEAREST OBSTACLE</span><b id="st-near">–</b><em class="mono">M</em></div>
+      <div><span class="mono">OBSTACLE POINTS</span><b id="st-obs">–</b><em class="mono">TRACKED</em></div>
+    </div>
+
+    <div class="fl-loop">
+      <div class="reveal"><span class="mono">SENSE</span><p>Sees its surroundings in real time, onboard.</p></div>
+      <div class="reveal"><span class="mono">UNDERSTAND</span><p>Picks out the obstacles that matter.</p></div>
+      <div class="reveal"><span class="mono">PROTECT</span><p>Marks a safety zone around every one.</p></div>
+      <div class="reveal"><span class="mono">PLAN</span><p>Continuously re-plans a clear path.</p></div>
+      <div class="reveal fl-next"><span class="mono">NEXT</span><p>Sub-THz radar, so it keeps working when the camera can't see.</p></div>
+    </div>
+    <p class="mono tiny fl-note" id="fl-note">Recorded flight, replayed from the drone's log.</p>
+  </div>
+</section>
+
+
+
+
+<section class="section use-cases" id="use-cases">
+  <div class="wrap">
+    <h2 class="uc-title reveal">Built for the places<br><span class="dim">robots usually fail.</span></h2>
+    <p class="apps-intro reveal">Our autonomy stack is plug-and-play and easily customizable for a wide range of industries operating in complex environmental conditions.</p>
+    <div class="apps">
+      <a class="app reveal" href="#contact"><img src="assets/usecases/drones.jpg" alt="" loading="lazy" width="800" height="520"><span class="mono idx">01</span><h3>Drones &amp; UAVs</h3><p>Accurate navigation and obstacle detection for safe aerial operations in diverse environments.</p><span class="mono tag">GPS-DENIED · FOG</span></a>
+      <a class="app reveal" href="#contact"><img src="assets/usecases/search-rescue.jpg" alt="" loading="lazy" width="800" height="520"><span class="mono idx">02</span><h3>Search &amp; Rescue</h3><p>Detects human vital signs to locate people quickly in emergencies.</p><span class="mono tag">SMOKE · DARKNESS · RUBBLE</span></a>
+      <a class="app reveal" href="#contact"><img src="assets/usecases/mining.jpg" alt="" loading="lazy" width="800" height="520"><span class="mono idx">03</span><h3>Mining</h3><p>Precise navigation for underground operations, improving safety in workspaces where smoke and dust cut visibility.</p><span class="mono tag">DUST · UNDERGROUND</span></a>
+      <a class="app reveal" href="#contact"><img src="assets/usecases/agriculture.jpg" alt="" loading="lazy" width="800" height="520"><span class="mono idx">04</span><h3>Agriculture</h3><p>Detects obstacles in all weather conditions to automate agriculture operations.</p><span class="mono tag">WEATHER · SPRAY · DUST</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section quotes-sec" id="validation">
+  <div class="wrap">
+    <h2 class="reveal">What partners say.</h2>
+    <div class="quotes">
+      <figure class="quote reveal"><blockquote>“Exciting to integrate Open Loop Autonomy with our UAS platforms.”</blockquote><figcaption><img src="assets/logos/apr-italia.png" alt="" loading="lazy"><span><b>Antonio Feliziani</b>Operator, RPAS Pilot, Technical Manager, APR Italia</span></figcaption></figure>
+      <figure class="quote reveal"><blockquote>“Aligns perfectly with our objectives.”</blockquote><figcaption><img src="assets/logos/pg.png" alt="" loading="lazy"><span><b>Mark Lewandowski</b>Director, Robotics Innovation, P&amp;G</span></figcaption></figure>
+      <figure class="quote reveal"><blockquote>“Overcomes the limitations of how our AMRs perceive and navigate their environment with LiDAR sensors.”</blockquote><figcaption><img src="assets/logos/jaten.png" alt="" loading="lazy"><span><b>You Chen</b>Board Chairman, Jaten</span></figcaption></figure>
+      <figure class="quote reveal"><blockquote>“Immense potential and aligns with our vision for the future of autonomous robotics.”</blockquote><figcaption><img src="assets/logos/kudan.png" alt="" loading="lazy"><span><b>Juan Wee</b>CEO, Kudan USA</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="light">
+<section class="section company" id="company">
+  <div class="wrap">
+    <div class="split-head">
+      <h2 class="reveal">Built by pioneering engineers and industry experts.</h2>
+      <div class="reveal">
+        <p>Our core team brings deep knowledge in advanced sensor systems, with more than 10 years at IBM Research, 100+ publications and 10+ patents, and in agile visual autonomy supported by DARPA and DEVCOM ARL: foundation-model perception, reactive mapless navigation, GPS-denied object-centric autonomy, and high-speed target search and tracking.</p>
+      </div>
+    </div>
+
+    <h3 class="group">Team</h3>
+    <div class="people">
+      <figure class="person reveal"><img src="assets/team/kevin-gu.jpg" alt="Dr. Kevin Gu" loading="lazy" width="480" height="480"><figcaption><b>Dr. Kevin Gu</b><span>CEO &amp; Founder</span></figcaption></figure>
+      <figure class="person reveal"><img src="assets/team/robot-guru.jpg" alt="Our robot guru" loading="lazy" width="480" height="480"><figcaption><b>Our robot guru</b><span>Technical Lead</span></figcaption></figure>
+      <figure class="person reveal"><a href="https://www.linkedin.com/in/maxwell-jin-5aa49bb8/" target="_blank" rel="noopener" aria-label="Maxwell Jin on LinkedIn"><img src="assets/team/maxwell.jpg" alt="Maxwell Jin" loading="lazy" width="480" height="480"></a><figcaption><b>Maxwell Jin</b><span>Robotics Engineer</span><a class="p-li" href="https://www.linkedin.com/in/maxwell-jin-5aa49bb8/" target="_blank" rel="noopener">LinkedIn ↗</a></figcaption></figure>
+      <figure class="person reveal"><a href="https://www.linkedin.com/in/tarunkumarp/" target="_blank" rel="noopener" aria-label="Tarunkumar Palanivelan on LinkedIn"><img src="assets/team/tarun.jpg" alt="Tarunkumar Palanivelan" loading="lazy" width="480" height="480"></a><figcaption><b>Tarunkumar Palanivelan</b><span>Robotics Engineer</span><a class="p-li" href="https://www.linkedin.com/in/tarunkumarp/" target="_blank" rel="noopener">LinkedIn ↗</a></figcaption></figure>
+    </div>
+    <h3 class="group">Executive advisors</h3>
+    <div class="people">
+      <figure class="person advisor reveal"><img src="assets/team/marc-viggiano.jpg" alt="Marc Viggiano" loading="lazy" width="480" height="480"><figcaption><b>Marc Viggiano</b><span>CEO and Founder, Niteopark</span><p class="p-bio">More than 35 years designing advanced sensor and communication systems, including radar and air traffic control. Former head of Saab’s Traffic Management business and CEO of Saab Sensis, he helped grow Sensis from a startup to a 700-person company.</p></figcaption></figure>
+      <figure class="person advisor reveal"><img src="assets/team/ken-stewart.jpg" alt="Ken Stewart" loading="lazy" width="480" height="480"><figcaption><b>Ken Stewart</b><span>CEO and Founder, Stewart Advisory Partners</span><p class="p-bio">Former President and CEO of NUAIR and CEO of AiRXOS, a GE Aviation company, with more than 25 years leading aviation, emerging technology and business growth, and an active voice in the commercial drone industry.</p></figcaption></figure>
+      <figure class="person advisor reveal"><img src="assets/team/ken-kaminski.jpg" alt="Ken Kaminski" loading="lazy" width="480" height="480"><figcaption><b>Ken Kaminski</b><span>Aerospace and Defense</span><p class="p-bio">Retired aerospace executive who served as Program Director of Airborne Radar at Lockheed Martin, Director of the Electronic Systems Laboratory at Georgia Tech, and General Manager of Air Traffic Management at Saab AB.</p></figcaption></figure>
+      <figure class="person advisor reveal"><img src="assets/team/karen-roth.jpg" alt="Karen Roth" loading="lazy" width="480" height="480"><figcaption><b>Karen Roth</b><span>Founder, RothSalluzzo, LLC</span><p class="p-bio">Department of Defense and technology leader in cyber, artificial intelligence, digital and systems engineering, with senior leadership roles at the Air Force Research Laboratory across a $1.5 billion research portfolio.</p></figcaption></figure>
+    </div>
+    <h3 class="group">R&amp;D collaborators</h3>
+    <div class="people">
+      <figure class="person reveal"><img src="assets/team/wooram-lee.jpg" alt="Dr. Wooram Lee" loading="lazy" width="480" height="480"><figcaption><b>Dr. Wooram Lee</b><span>R&amp;D Collaborator</span><span class="p-org">Penn State, Associate Professor</span></figcaption></figure>
+      <figure class="person reveal"><img src="assets/team/mark-rodwell.jpg" alt="Dr. Mark Rodwell" loading="lazy" width="480" height="480"><figcaption><b>Dr. Mark Rodwell</b><span>R&amp;D Collaborator</span><span class="p-org">UCSB, Professor</span></figcaption></figure>
+      <figure class="person reveal"><img src="assets/team/michael-wu.jpg" alt="Dr. Michael Chung-Tse Wu" loading="lazy" width="480" height="480"><figcaption><b>Dr. Michael Chung-Tse Wu</b><span>R&amp;D Collaborator</span><span class="p-org">Rutgers / National Taiwan University</span></figcaption></figure>
+      <figure class="person reveal"><img src="assets/team/diana-strickland.jpg" alt="Diana Strickland, Ph.D." loading="lazy" width="480" height="480"><figcaption><b>Diana Strickland, Ph.D.</b><span>R&amp;D Collaborator</span><span class="p-org">Advanced Science Research Center, CUNY</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section news-sec" id="news">
+  <div class="wrap">
+    <div class="split-head">
+      <h2 class="reveal">News and support.</h2>
+      <p class="reveal">Grants, awards and programs backing our work. Read more in <a href="https://www.nycinnovationhotspot.org/post/speeding-up-with-astrabeam" target="_blank" rel="noopener">Speeding up with Astrabeam</a> (NYC Innovation Hotspot) and about <a href="https://lnkd.in/ebew-TFz" target="_blank" rel="noopener">our collaboration with CUNY ASRC</a>.</p>
+    </div>
+    <ul class="news">
+      <li class="reveal"><a class="news-link" href="https://fuseventures.com/accelerator" target="_blank" rel="noopener"><img src="assets/logos/fuse-ventures.png" alt="" loading="lazy"><div><b>DIU Fuse Accelerator, Fall 2026 Cohort</b><p>Selected for the Fall 2026 cohort of the Fuse Ventures dual-use accelerator.</p></div></a></li>
+      <li class="reveal"><img src="assets/logos/fuzehub.png" alt="" loading="lazy"><div><b>2026 FuzeHub Manufacturing Grant</b><p>Advanced multi-modal sensor fusion for heavy machinery functional safety.</p></div></li>
+      <li class="reveal"><img src="assets/logos/westchester-innovation-network.png" alt="" loading="lazy"><div><b>Westchester Innovation Network</b><p>Partnership to test our safety sensors on heavy machinery.</p></div></li>
+      <li class="reveal"><a class="news-link" href="https://centerstateceo.com/news/empire-state-development-announces-genius-ny-round-10-finalists" target="_blank" rel="noopener"><img src="assets/logos/genius-ny.png" alt="" loading="lazy"><div><b>Genius NY, Round 10 Finalist</b><p>Finalist of Genius NY, the world's leading robotics and drone accelerator.</p></div></a></li>
+      <li class="reveal"><img src="assets/logos/ny-state.png" alt="" loading="lazy"><div><b>NYSTAR IMG Grant Award</b><p>Awarded a commitment letter for the NYSTAR IMG Grant.</p></div></li>
+      <li class="reveal"><img src="assets/logos/nemc.png" alt="" loading="lazy"><div><b>NEMC Propel Operations Grant</b><p>Startup awardee, for radar prototyping development.</p></div></li>
+      <li class="reveal"><img src="assets/logos/nsf.png" alt="" loading="lazy"><div><b>NSF STTR Phase I Award</b><p>A D-band, silicon-based, phased array radar front-end module for smart sensing applications.</p></div></li>
+      <li class="reveal"><img src="assets/logos/nsf.png" alt="" loading="lazy"><div><b>NSF FuSe Grant</b><p>Future of Semiconductors: heterogeneous module, array antenna and IC co-design for energy-efficient D-band wireless communications and radar.</p></div></li>
+      <li class="reveal"><img src="assets/logos/nasa.png" alt="" loading="lazy"><div><b>NASA SBIR Phase I Award</b><p>Ultra-low-loss millimeter-wave holographic antennas for CubeSat remote sensing.</p></div></li>
+      <li class="reveal"><img src="assets/logos/nvidia-inception.png" alt="" loading="lazy"><div><b>NVIDIA Inception Program</b><p>Startup member.</p></div></li>
+      <li class="reveal"><img src="assets/logos/plug-and-play.png" alt="" loading="lazy"><div><b>Plug and Play Semiconductor Accelerator</b><p>Fall 2024 batch startup member.</p></div></li>
+      <li class="reveal"><img src="assets/logos/element46.png" alt="" loading="lazy"><div><b>Element 46 Accelerator</b><p>Fall 2024 cohort startup member.</p></div></li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Put our autonomy in your robot.</h2>
+      <p class="contact-intro">Tell us about your platform and the conditions it struggles in, and we'll get back to you.</p>
+      <dl class="contact-list">
+        <dt>Email</dt><dd><a href="mailto:info@astrabeam.com">info@astrabeam.com</a></dd>
+        <dt>Phone</dt><dd><a href="tel:+19142221149">(914) 222-1149</a></dd>
+        <dt>Office</dt><dd>520 White Plains Road, Suite 500<br>Tarrytown, NY 10591</dd>
+      </dl>
+    </div>
+    <!-- Preview of the contact form. On Squarespace this is replaced by a native Form Block
+         (same fields, storage: info@astrabeam.com), styled by the kit's Custom CSS. -->
+    <form class="contact-form" id="contact-form" data-preview="true" novalidate>
+      <label><span>Name *</span><input name="name" autocomplete="name" required></label>
+      <label><span>Work email *</span><input name="email" type="email" autocomplete="email" required></label>
+      <label><span>Company</span><input name="company" autocomplete="organization"></label>
+      <label><span>Industry</span>
+        <select name="industry">
+          <option value="">Select…</option>
+          <option>Drones &amp; UAVs</option><option>Search &amp; Rescue</option><option>Mining</option>
+          <option>Agriculture</option><option>Defense</option><option>Research</option><option>Other</option>
+        </select>
+      </label>
+      <label class="full"><span>What are you building? *</span><textarea name="message" rows="5" required></textarea></label>
+      <div class="form-foot full">
+        <button class="btn" type="submit">Send</button>
+        <p class="note" id="form-note" role="status"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap foot-top">
+    <img class="foot-logo" src="assets/astrabeam-logo-light.png" alt="Astrabeam">
+    <div class="foot-cols">
+      <div><b>Company</b><a href="#company">About and team</a><a href="#news">News</a><a href="#use-cases">Use cases</a></div>
+      <div><b>Platform</b><a href="#platform">Hardware and software</a><a href="#flight">In the field</a><a href="#pov">Flight footage</a></div>
+      <div><b>Contact</b><a href="mailto:info@astrabeam.com">info@astrabeam.com</a><a href="tel:+19142221149">(914) 222-1149</a><span>520 White Plains Road, Suite 500<br>Tarrytown, NY 10591</span></div>
+    </div>
+  </div>
+  <div class="wrap foot-bottom"><span>© 2026 Astrabeam</span><a href="privacy.html">Privacy</a></div>
+</footer>
+
+<script src="main.js?v=c72fe091"></script>
+<script type="module" src="flight.js?v=7da83110"></script>
+</body>
+</html>
